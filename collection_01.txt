@@ -4,6 +4,12 @@
 
 REGEX:
 TO_DATE\(.*?(?=)\)
+TO_DATE\(.*?(?=.)\)
+
+
+    ^       match from the start of the string
+    .*?     match any character (.), zero or more times (*) but as less as possible (?)
+    (?=-)   till the next character is a "-" (this is a positive look ahead)
 
 
 TEST String:
